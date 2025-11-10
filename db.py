@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 import datetime
 
-bot = telebot.TeleBot("2014559954:AAGXGw0RY0gBb4OJXFWKSNr6btjMsY92I_o")
+bot = telebot.TeleBot("")
 conn = sqlite3.connect("bot_db.db", check_same_thread=False)
 cursor = conn.cursor()
 date = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -40,4 +40,5 @@ CREATE TABLE "expences" (
 	"id_added" INTEGER NULL
 )
 ;
+
 """
